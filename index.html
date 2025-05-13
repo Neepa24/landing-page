@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>RecipeFinder</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="contact-info">
+                <a href="mailto:support@recipefinder.com">support@recipefinder.com</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Find Recipes with Ingredients You Already Have!</h2>
+            <div class="search-container">
+                <input type="text" id="ingredient-search" placeholder="e.g., eggs, cheese, tomatoes">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i> Find Recipes
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Filters Section -->
+    <section id="filters">
+        <h3>Refine Your Search</h3>
+        <form id="filters-form">
+            <label for="diet">Dietary Restrictions:</label>
+            <select id="diet">
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten-Free</option>
+                <option value="dairy-free">Dairy-Free</option>
+            </select>
+
+            <label for="difficulty">Difficulty Level:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <label for="cuisine">Cuisine Type:</label>
+            <select id="cuisine">
+                <option value="italian">Italian</option>
+                <option value="mexican">Mexican</option>
+                <option value="asian">Asian</option>
+            </select>
+
+            <button type="submit" id="filter-btn">Apply Filters</button>
+        </form>
+    </section>
+
+    <!-- Featured Recipes Section -->
+    <section id="featured-recipes">
+        <h3>Featured Recipes</h3>
+        <div class="recipe-cards">
+            <div class="recipe-card">
+                <img src="recipe1.jpg" alt="Recipe 1">
+                <h4>Spaghetti Carbonara</h4>
+                <p>Rating: 4.5/5</p>
+                <button>View Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe2.jpg" alt="Recipe 2">
+                <h4>Vegan Tacos</h4>
+                <p>Rating: 5/5</p>
+                <button>View Recipe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h3>How It Works</h3>
+        <ol>
+            <li>Add Ingredients</li>
+            <li>Filter Preferences</li>
+            <li>Cook & Enjoy!</li>
+        </ol>
+    </section>
+
+    <!-- Save & Shopping List Section -->
+    <section id="save-shopping-list">
+        <button id="save-recipes">Save Favorite Recipes</button>
+        <button id="shopping-list">Create Shopping List</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+        <div class="footer-contact">
+            <p>Contact: support@recipefinder.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
